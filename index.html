@@ -1,0 +1,69 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 10%;
+  }
+  
+  .cup{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    background-image: linear-gradient(180deg, rgba(22,42,199,1) 50%, white 50%);
+    background-size: 100% 40%;
+  }
+
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+  }
+
+  .bottom-cup {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    background-image: linear-gradient(180deg, rgba(22, 42, 100, 3));
+  }
+
+  .top-cup {
+    position: absolute;
+    left: 250px;
+    top: 350px;
+    background-color: red;
+    border: 3px solid black;
+  }
+
+  .star {
+    width: 30%;
+    height: 30%; 
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: translate(4px, 32px) scale(0.8);
+  }
+  
+  .triangle{
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(60% 50%, 0% 100%, 0 0);
+  }
+  
+  
+  
+</style>
+
+<div class="cup top-cup"></div>
+<div class="cup bottom-cup"></div>  
+<div class="cup triangle"></div>
+  
+
+
